@@ -1,0 +1,23 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,9.0.0*%
+%TF.CreationDate,2025-04-09T11:56:37+05:30*%
+%TF.ProjectId,IoT enabled health monitor,496f5420-656e-4616-926c-656420686561,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 9.0.0) date 2025-04-09 11:56:37*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.050000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X24250000Y-18000000D02*
+X272500000Y-18000000D01*
+X272500000Y-165250000D01*
+X24250000Y-165250000D01*
+X24250000Y-18000000D01*
+M02*

@@ -1,0 +1,1989 @@
+(export 
+  (version "E") 
+  (design 
+    (source "C:\\Users\\kalya\\OneDrive\\Documents\\project1\\buck converter\\BOOST CONVERTER\\IoT enabled health monitor\\IoT enabled health monitor.kicad_sch") 
+    (date "2025-04-10T19:33:01+0530") 
+    (tool "Eeschema 9.0.0") 
+    (sheet 
+      (number "1") 
+      (name "/") 
+      (tstamps "/") 
+      (title_block 
+        (title) 
+        (company) 
+        (rev) 
+        (date) 
+        (source "IoT enabled health monitor.kicad_sch") 
+        (comment 
+          (number "1") 
+          (value "")) 
+        (comment 
+          (number "2") 
+          (value "")) 
+        (comment 
+          (number "3") 
+          (value "")) 
+        (comment 
+          (number "4") 
+          (value "")) 
+        (comment 
+          (number "5") 
+          (value "")) 
+        (comment 
+          (number "6") 
+          (value "")) 
+        (comment 
+          (number "7") 
+          (value "")) 
+        (comment 
+          (number "8") 
+          (value "")) 
+        (comment 
+          (number "9") 
+          (value ""))))) 
+  (components 
+    (comp 
+      (ref "J1") 
+      (value "USB_C_Receptacle_PowerOnly_6P") 
+      (footprint "Connector_USB:USB_C_Receptacle_GCT_USB4125-xx-x-0190_6P_TopMnt_Horizontal") 
+      (datasheet "https://www.usb.org/sites/default/files/documents/usb_type-c.zip") 
+      (description "USB Power-Only 6P Type-C Receptacle connector") 
+      (fields 
+        (field 
+          (name "Footprint") "Connector_USB:USB_C_Receptacle_GCT_USB4125-xx-x-0190_6P_TopMnt_Horizontal") 
+        (field 
+          (name "Datasheet") "https://www.usb.org/sites/default/files/documents/usb_type-c.zip") 
+        (field 
+          (name "Description") "USB Power-Only 6P Type-C Receptacle connector")) 
+      (libsource 
+        (lib "Connector") 
+        (part "USB_C_Receptacle_PowerOnly_6P") 
+        (description "USB Power-Only 6P Type-C Receptacle connector")) 
+      (property 
+        (name "Sheetname") 
+        (value "Root")) 
+      (property 
+        (name "Sheetfile") 
+        (value "IoT enabled health monitor.kicad_sch")) 
+      (property 
+        (name "ki_keywords") 
+        (value "usb universal serial bus type-C power-only charging-only 6P 6C")) 
+      (property 
+        (name "ki_fp_filters") 
+        (value "USB*C*Receptacle*")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "a68593a6-c67d-44c5-85d0-5863d772435c")) 
+    (comp 
+      (ref "U1") 
+      (value "MAX30102") 
+      (footprint "OptoDevice:Maxim_OLGA-14_3.3x5.6mm_P0.8mm") 
+      (datasheet "https://datasheets.maximintegrated.com/en/ds/MAX30102.pdf") 
+      (description "Heart Rate Sensor, 14-OLGA") 
+      (fields 
+        (field 
+          (name "Footprint") "OptoDevice:Maxim_OLGA-14_3.3x5.6mm_P0.8mm") 
+        (field 
+          (name "Datasheet") "https://datasheets.maximintegrated.com/en/ds/MAX30102.pdf") 
+        (field 
+          (name "Description") "Heart Rate Sensor, 14-OLGA")) 
+      (libsource 
+        (lib "Sensor") 
+        (part "MAX30102") 
+        (description "Heart Rate Sensor, 14-OLGA")) 
+      (property 
+        (name "Sheetname") 
+        (value "Root")) 
+      (property 
+        (name "Sheetfile") 
+        (value "IoT enabled health monitor.kicad_sch")) 
+      (property 
+        (name "ki_keywords") 
+        (value "Heart Rate")) 
+      (property 
+        (name "ki_fp_filters") 
+        (value "Maxim*OLGA*3.3x5.6mm*P0.8mm*")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "781b0005-55be-4140-bd84-0914c83f67bd")) 
+    (comp 
+      (ref "U2") 
+      (value "MPU-6050") 
+      (footprint "Sensor_Motion:InvenSense_QFN-24_4x4mm_P0.5mm") 
+      (datasheet "https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf") 
+      (description "InvenSense 6-Axis Motion Sensor, Gyroscope, Accelerometer, I2C") 
+      (fields 
+        (field 
+          (name "Footprint") "Sensor_Motion:InvenSense_QFN-24_4x4mm_P0.5mm") 
+        (field 
+          (name "Datasheet") "https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf") 
+        (field 
+          (name "Description") "InvenSense 6-Axis Motion Sensor, Gyroscope, Accelerometer, I2C")) 
+      (libsource 
+        (lib "Sensor_Motion") 
+        (part "MPU-6050") 
+        (description "InvenSense 6-Axis Motion Sensor, Gyroscope, Accelerometer, I2C")) 
+      (property 
+        (name "Sheetname") 
+        (value "Root")) 
+      (property 
+        (name "Sheetfile") 
+        (value "IoT enabled health monitor.kicad_sch")) 
+      (property 
+        (name "ki_keywords") 
+        (value "mems")) 
+      (property 
+        (name "ki_fp_filters") 
+        (value "*QFN*4x4mm*P0.5mm*")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "97cfa647-bf1e-4ccf-837a-7e63984486f1")) 
+    (comp 
+      (ref "U3") 
+      (value "TMP117xxDRV") 
+      (footprint "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm") 
+      (datasheet "https://www.ti.com/lit/ds/symlink/tmp117.pdf") 
+      (description "Digital Temperature Sensor with I2C/SMBus Interface, 16 bits, ±0.3°C, one-shot conversion, alert, nist traceable, EEPROM, WSON") 
+      (fields 
+        (field 
+          (name "Footprint") "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm") 
+        (field 
+          (name "Datasheet") "https://www.ti.com/lit/ds/symlink/tmp117.pdf") 
+        (field 
+          (name "Description") "Digital Temperature Sensor with I2C/SMBus Interface, 16 bits, ±0.3°C, one-shot conversion, alert, nist traceable, EEPROM, WSON")) 
+      (libsource 
+        (lib "Sensor_Temperature") 
+        (part "TMP117xxDRV") 
+        (description "Digital Temperature Sensor with I2C/SMBus Interface, 16 bits, ±0.3°C, one-shot conversion, alert, nist traceable, EEPROM, WSON")) 
+      (property 
+        (name "Sheetname") 
+        (value "Root")) 
+      (property 
+        (name "Sheetfile") 
+        (value "IoT enabled health monitor.kicad_sch")) 
+      (property 
+        (name "ki_keywords") 
+        (value "digital temperature sensor i2c smbus nist")) 
+      (property 
+        (name "ki_fp_filters") 
+        (value "WSON*1EP?2x2mm?P0.65mm?EP1x1.6mm*")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "ed3097d4-c14f-4160-af60-7224fb77fdd9")) 
+    (comp 
+      (ref "U4") 
+      (value "W25Q32JVSS") 
+      (footprint "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm") 
+      (datasheet "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf") 
+      (description "32Mbit / 4MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8 (208 mil)") 
+      (fields 
+        (field 
+          (name "Footprint") "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm") 
+        (field 
+          (name "Datasheet") "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf") 
+        (field 
+          (name "Description") "32Mbit / 4MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8 (208 mil)")) 
+      (libsource 
+        (lib "Memory_Flash") 
+        (part "W25Q32JVSS") 
+        (description "32Mbit / 4MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8 (208 mil)")) 
+      (property 
+        (name "Sheetname") 
+        (value "Root")) 
+      (property 
+        (name "Sheetfile") 
+        (value "IoT enabled health monitor.kicad_sch")) 
+      (property 
+        (name "ki_keywords") 
+        (value "flash memory SPI")) 
+      (property 
+        (name "ki_fp_filters") 
+        (value "*SOIC*5.3x5.3mm*P1.27mm*")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "c1110ca6-ee93-4813-b7aa-81b1ae20f3bb")) 
+    (comp 
+      (ref "U6") 
+      (value "AP2112K-3.3") 
+      (footprint "Package_TO_SOT_SMD:SOT-23-5") 
+      (datasheet "https://www.diodes.com/assets/Datasheets/AP2112.pdf") 
+      (description "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5") 
+      (fields 
+        (field 
+          (name "Footprint") "Package_TO_SOT_SMD:SOT-23-5") 
+        (field 
+          (name "Datasheet") "https://www.diodes.com/assets/Datasheets/AP2112.pdf") 
+        (field 
+          (name "Description") "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5")) 
+      (libsource 
+        (lib "Regulator_Linear") 
+        (part "AP2112K-3.3") 
+        (description "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5")) 
+      (property 
+        (name "Sheetname") 
+        (value "Root")) 
+      (property 
+        (name "Sheetfile") 
+        (value "IoT enabled health monitor.kicad_sch")) 
+      (property 
+        (name "ki_keywords") 
+        (value "linear regulator ldo fixed positive")) 
+      (property 
+        (name "ki_fp_filters") 
+        (value "SOT?23?5*")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "5f53fdf0-b235-4688-a485-4df02b8979a1")) 
+    (comp 
+      (ref "U7") 
+      (value "LGS5500EP") 
+      (footprint "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm") 
+      (datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304071430_Legend-Si-LGS5500EP_C5280699.pdf") 
+      (description "LiPo charger and 5V boost converter, 4.5-5.5V input, 4.2-4.4V battery, 400-1000mA charge current, 800mA boost output, SOIC-8-1EP") 
+      (fields 
+        (field 
+          (name "Footprint") "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm") 
+        (field 
+          (name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304071430_Legend-Si-LGS5500EP_C5280699.pdf") 
+        (field 
+          (name "Description") "LiPo charger and 5V boost converter, 4.5-5.5V input, 4.2-4.4V battery, 400-1000mA charge current, 800mA boost output, SOIC-8-1EP")) 
+      (libsource 
+        (lib "Battery_Management") 
+        (part "LGS5500EP") 
+        (description "LiPo charger and 5V boost converter, 4.5-5.5V input, 4.2-4.4V battery, 400-1000mA charge current, 800mA boost output, SOIC-8-1EP")) 
+      (property 
+        (name "Sheetname") 
+        (value "Root")) 
+      (property 
+        (name "Sheetfile") 
+        (value "IoT enabled health monitor.kicad_sch")) 
+      (property 
+        (name "ki_keywords") 
+        (value "lipo lithium battery charger boost")) 
+      (property 
+        (name "ki_fp_filters") 
+        (value "SOIC*1EP*P1.27mm*")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "524f7291-4c53-4286-b6cd-2a2771fa75a6")) 
+    (comp 
+      (ref "U8") 
+      (value "ESP32-S2-WROVER-I") 
+      (footprint "RF_Module:ESP32-S2-WROVER") 
+      (datasheet "https://www.espressif.com/sites/default/files/documentation/esp32-s2-wroom_esp32-s2-wroom-i_datasheet_en.pdf") 
+      (description "RF Module, ESP32-D0WDQ6 SoC, Wi-Fi 802.11b/g/n, 32-bit, 2.7-3.6V, onboard antenna, SMD") 
+      (fields 
+        (field 
+          (name "Footprint") "RF_Module:ESP32-S2-WROVER") 
+        (field 
+          (name "Datasheet") "https://www.espressif.com/sites/default/files/documentation/esp32-s2-wroom_esp32-s2-wroom-i_datasheet_en.pdf") 
+        (field 
+          (name "Description") "RF Module, ESP32-D0WDQ6 SoC, Wi-Fi 802.11b/g/n, 32-bit, 2.7-3.6V, onboard antenna, SMD")) 
+      (libsource 
+        (lib "RF_Module") 
+        (part "ESP32-S2-WROVER-I") 
+        (description "RF Module, ESP32-D0WDQ6 SoC, Wi-Fi 802.11b/g/n, 32-bit, 2.7-3.6V, onboard antenna, SMD")) 
+      (property 
+        (name "Sheetname") 
+        (value "Root")) 
+      (property 
+        (name "Sheetfile") 
+        (value "IoT enabled health monitor.kicad_sch")) 
+      (property 
+        (name "ki_keywords") 
+        (value "RF Radio ESP ESP32 Espressif onboard PCB antenna")) 
+      (property 
+        (name "ki_fp_filters") 
+        (value "ESP32?S2?WROVER*")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "f84301ba-f755-4a7e-80f3-72cc11e5cf08")) 
+    (comp 
+      (ref "U9") 
+      (value "TP4057") 
+      (footprint "Package_TO_SOT_SMD:TSOT-23-6") 
+      (datasheet "http://toppwr.com/uploadfile/file/20230304/640302a47b738.pdf") 
+      (description "Constant-current/constant-voltage linear charger for single cell lithium-ion batteries with 2.9V Trickle Charge, 4.5V to 6.5V VDD, -40 to +85 degree Celsius, TSOT-23-6") 
+      (fields 
+        (field 
+          (name "Footprint") "Package_TO_SOT_SMD:TSOT-23-6") 
+        (field 
+          (name "Datasheet") "http://toppwr.com/uploadfile/file/20230304/640302a47b738.pdf") 
+        (field 
+          (name "Description") "Constant-current/constant-voltage linear charger for single cell lithium-ion batteries with 2.9V Trickle Charge, 4.5V to 6.5V VDD, -40 to +85 degree Celsius, TSOT-23-6")) 
+      (libsource 
+        (lib "Battery_Management") 
+        (part "TP4057") 
+        (description "Constant-current/constant-voltage linear charger for single cell lithium-ion batteries with 2.9V Trickle Charge, 4.5V to 6.5V VDD, -40 to +85 degree Celsius, TSOT-23-6")) 
+      (property 
+        (name "Sheetname") 
+        (value "Root")) 
+      (property 
+        (name "Sheetfile") 
+        (value "IoT enabled health monitor.kicad_sch")) 
+      (property 
+        (name "ki_keywords") 
+        (value "Constant-current constant-voltage linear charger single-cell lithium-ion battery")) 
+      (property 
+        (name "ki_fp_filters") 
+        (value "TSOT?23*")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "c232a619-504c-4a46-99e9-1cfe7f470bf5"))) 
+  (libparts 
+    (libpart 
+      (lib "Battery_Management") 
+      (part "LGS5500EP") 
+      (description "LiPo charger and 5V boost converter, 4.5-5.5V input, 4.2-4.4V battery, 400-1000mA charge current, 800mA boost output, SOIC-8-1EP") 
+      (docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2304071430_Legend-Si-LGS5500EP_C5280699.pdf") 
+      (footprints 
+        (fp "SOIC*1EP*P1.27mm*")) 
+      (fields 
+        (field 
+          (name "Reference") "U") 
+        (field 
+          (name "Value") "LGS5500EP") 
+        (field 
+          (name "Footprint") "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm") 
+        (field 
+          (name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304071430_Legend-Si-LGS5500EP_C5280699.pdf") 
+        (field 
+          (name "Description") "LiPo charger and 5V boost converter, 4.5-5.5V input, 4.2-4.4V battery, 400-1000mA charge current, 800mA boost output, SOIC-8-1EP")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "ISET") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "VIN") 
+          (type "power_in")) 
+        (pin 
+          (num "3") 
+          (name "VL") 
+          (type "input")) 
+        (pin 
+          (num "4") 
+          (name "LX") 
+          (type "input")) 
+        (pin 
+          (num "5") 
+          (name "VH") 
+          (type "power_out")) 
+        (pin 
+          (num "6") 
+          (name "NC") 
+          (type "no_connect")) 
+        (pin 
+          (num "7") 
+          (name "VSET/LED") 
+          (type "output")) 
+        (pin 
+          (num "8") 
+          (name "NTC") 
+          (type "input")) 
+        (pin 
+          (num "9") 
+          (name "GND") 
+          (type "power_in")))) 
+    (libpart 
+      (lib "Battery_Management") 
+      (part "TP4057") 
+      (description "Constant-current/constant-voltage linear charger for single cell lithium-ion batteries with 2.9V Trickle Charge, 4.5V to 6.5V VDD, -40 to +85 degree Celsius, TSOT-23-6") 
+      (docs "http://toppwr.com/uploadfile/file/20230304/640302a47b738.pdf") 
+      (footprints 
+        (fp "TSOT?23*")) 
+      (fields 
+        (field 
+          (name "Reference") "U") 
+        (field 
+          (name "Value") "TP4057") 
+        (field 
+          (name "Footprint") "Package_TO_SOT_SMD:TSOT-23-6") 
+        (field 
+          (name "Datasheet") "http://toppwr.com/uploadfile/file/20230304/640302a47b738.pdf") 
+        (field 
+          (name "Description") "Constant-current/constant-voltage linear charger for single cell lithium-ion batteries with 2.9V Trickle Charge, 4.5V to 6.5V VDD, -40 to +85 degree Celsius, TSOT-23-6")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "~{CHRG}") 
+          (type "open_collector")) 
+        (pin 
+          (num "2") 
+          (name "GND") 
+          (type "power_in")) 
+        (pin 
+          (num "3") 
+          (name "BAT") 
+          (type "power_out")) 
+        (pin 
+          (num "4") 
+          (name "V_{CC}") 
+          (type "power_in")) 
+        (pin 
+          (num "5") 
+          (name "STDBY") 
+          (type "open_collector")) 
+        (pin 
+          (num "6") 
+          (name "PROG") 
+          (type "passive")))) 
+    (libpart 
+      (lib "Connector") 
+      (part "USB_C_Receptacle_PowerOnly_6P") 
+      (description "USB Power-Only 6P Type-C Receptacle connector") 
+      (docs "https://www.usb.org/sites/default/files/documents/usb_type-c.zip") 
+      (footprints 
+        (fp "USB*C*Receptacle*")) 
+      (fields 
+        (field 
+          (name "Reference") "J") 
+        (field 
+          (name "Value") "USB_C_Receptacle_PowerOnly_6P") 
+        (field 
+          (name "Footprint")) 
+        (field 
+          (name "Datasheet") "https://www.usb.org/sites/default/files/documents/usb_type-c.zip") 
+        (field 
+          (name "Description") "USB Power-Only 6P Type-C Receptacle connector")) 
+      (pins 
+        (pin 
+          (num "A5") 
+          (name "CC1") 
+          (type "bidirectional")) 
+        (pin 
+          (num "A9") 
+          (name "VBUS") 
+          (type "passive")) 
+        (pin 
+          (num "A12") 
+          (name "GND") 
+          (type "passive")) 
+        (pin 
+          (num "B5") 
+          (name "CC2") 
+          (type "bidirectional")) 
+        (pin 
+          (num "B9") 
+          (name "VBUS") 
+          (type "passive")) 
+        (pin 
+          (num "B12") 
+          (name "GND") 
+          (type "passive")) 
+        (pin 
+          (num "S1") 
+          (name "SHIELD") 
+          (type "passive")))) 
+    (libpart 
+      (lib "Memory_Flash") 
+      (part "W25Q32JVSS") 
+      (description "32Mbit / 4MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8 (208 mil)") 
+      (docs "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf") 
+      (footprints 
+        (fp "*SOIC*5.3x5.3mm*P1.27mm*")) 
+      (fields 
+        (field 
+          (name "Reference") "U") 
+        (field 
+          (name "Value") "W25Q32JVSS") 
+        (field 
+          (name "Footprint") "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm") 
+        (field 
+          (name "Datasheet") "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf") 
+        (field 
+          (name "Description") "32Mbit / 4MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8 (208 mil)")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "~{CS}") 
+          (type "input")) 
+        (pin 
+          (num "2") 
+          (name "DO/IO_{1}") 
+          (type "bidirectional")) 
+        (pin 
+          (num "3") 
+          (name "~{WP}/IO_{2}") 
+          (type "bidirectional")) 
+        (pin 
+          (num "4") 
+          (name "GND") 
+          (type "power_in")) 
+        (pin 
+          (num "5") 
+          (name "DI/IO_{0}") 
+          (type "bidirectional")) 
+        (pin 
+          (num "6") 
+          (name "CLK") 
+          (type "input")) 
+        (pin 
+          (num "7") 
+          (name "~{HOLD}/~{RESET}/IO_{3}") 
+          (type "bidirectional")) 
+        (pin 
+          (num "8") 
+          (name "VCC") 
+          (type "power_in")))) 
+    (libpart 
+      (lib "RF_Module") 
+      (part "ESP32-S2-WROVER-I") 
+      (description "RF Module, ESP32-D0WDQ6 SoC, Wi-Fi 802.11b/g/n, 32-bit, 2.7-3.6V, onboard antenna, SMD") 
+      (docs "https://www.espressif.com/sites/default/files/documentation/esp32-s2-wroom_esp32-s2-wroom-i_datasheet_en.pdf") 
+      (footprints 
+        (fp "ESP32?S2?WROVER*")) 
+      (fields 
+        (field 
+          (name "Reference") "U") 
+        (field 
+          (name "Value") "ESP32-S2-WROVER-I") 
+        (field 
+          (name "Footprint") "RF_Module:ESP32-S2-WROVER") 
+        (field 
+          (name "Datasheet") "https://www.espressif.com/sites/default/files/documentation/esp32-s2-wroom_esp32-s2-wroom-i_datasheet_en.pdf") 
+        (field 
+          (name "Description") "RF Module, ESP32-D0WDQ6 SoC, Wi-Fi 802.11b/g/n, 32-bit, 2.7-3.6V, onboard antenna, SMD")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "GND") 
+          (type "power_in")) 
+        (pin 
+          (num "2") 
+          (name "3V3") 
+          (type "power_in")) 
+        (pin 
+          (num "3") 
+          (name "IO00") 
+          (type "bidirectional")) 
+        (pin 
+          (num "4") 
+          (name "IO01") 
+          (type "bidirectional")) 
+        (pin 
+          (num "5") 
+          (name "IO02") 
+          (type "bidirectional")) 
+        (pin 
+          (num "6") 
+          (name "IO03") 
+          (type "bidirectional")) 
+        (pin 
+          (num "7") 
+          (name "IO04") 
+          (type "bidirectional")) 
+        (pin 
+          (num "8") 
+          (name "IO05") 
+          (type "bidirectional")) 
+        (pin 
+          (num "9") 
+          (name "IO06") 
+          (type "bidirectional")) 
+        (pin 
+          (num "10") 
+          (name "IO07") 
+          (type "bidirectional")) 
+        (pin 
+          (num "11") 
+          (name "IO08") 
+          (type "bidirectional")) 
+        (pin 
+          (num "12") 
+          (name "IO09") 
+          (type "bidirectional")) 
+        (pin 
+          (num "13") 
+          (name "IO10") 
+          (type "bidirectional")) 
+        (pin 
+          (num "14") 
+          (name "IO11") 
+          (type "bidirectional")) 
+        (pin 
+          (num "15") 
+          (name "IO12") 
+          (type "bidirectional")) 
+        (pin 
+          (num "16") 
+          (name "IO13") 
+          (type "bidirectional")) 
+        (pin 
+          (num "17") 
+          (name "IO14") 
+          (type "bidirectional")) 
+        (pin 
+          (num "18") 
+          (name "IO15") 
+          (type "bidirectional")) 
+        (pin 
+          (num "19") 
+          (name "IO16") 
+          (type "bidirectional")) 
+        (pin 
+          (num "20") 
+          (name "IO17") 
+          (type "bidirectional")) 
+        (pin 
+          (num "21") 
+          (name "IO18") 
+          (type "bidirectional")) 
+        (pin 
+          (num "22") 
+          (name "USB_D-") 
+          (type "bidirectional")) 
+        (pin 
+          (num "23") 
+          (name "USB_D+") 
+          (type "bidirectional")) 
+        (pin 
+          (num "24") 
+          (name "IO21") 
+          (type "bidirectional")) 
+        (pin 
+          (num "25") 
+          (name "IO26") 
+          (type "bidirectional")) 
+        (pin 
+          (num "26") 
+          (name "GND") 
+          (type "passive")) 
+        (pin 
+          (num "27") 
+          (name "IO33") 
+          (type "bidirectional")) 
+        (pin 
+          (num "28") 
+          (name "IO34") 
+          (type "bidirectional")) 
+        (pin 
+          (num "29") 
+          (name "IO35") 
+          (type "bidirectional")) 
+        (pin 
+          (num "30") 
+          (name "IO36") 
+          (type "bidirectional")) 
+        (pin 
+          (num "31") 
+          (name "IO37") 
+          (type "bidirectional")) 
+        (pin 
+          (num "32") 
+          (name "IO38") 
+          (type "bidirectional")) 
+        (pin 
+          (num "33") 
+          (name "IO39") 
+          (type "bidirectional")) 
+        (pin 
+          (num "34") 
+          (name "IO40") 
+          (type "bidirectional")) 
+        (pin 
+          (num "35") 
+          (name "IO41") 
+          (type "bidirectional")) 
+        (pin 
+          (num "36") 
+          (name "IO42") 
+          (type "bidirectional")) 
+        (pin 
+          (num "37") 
+          (name "TXD0") 
+          (type "bidirectional")) 
+        (pin 
+          (num "38") 
+          (name "RXD0") 
+          (type "bidirectional")) 
+        (pin 
+          (num "39") 
+          (name "IO45") 
+          (type "bidirectional")) 
+        (pin 
+          (num "40") 
+          (name "IO46") 
+          (type "input")) 
+        (pin 
+          (num "41") 
+          (name "EN") 
+          (type "input")) 
+        (pin 
+          (num "42") 
+          (name "GND") 
+          (type "passive")) 
+        (pin 
+          (num "43") 
+          (name "GND") 
+          (type "passive")))) 
+    (libpart 
+      (lib "Regulator_Linear") 
+      (part "AP2112K-3.3") 
+      (description "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5") 
+      (docs "https://www.diodes.com/assets/Datasheets/AP2112.pdf") 
+      (footprints 
+        (fp "SOT?23?5*")) 
+      (fields 
+        (field 
+          (name "Reference") "U") 
+        (field 
+          (name "Value") "AP2112K-3.3") 
+        (field 
+          (name "Footprint") "Package_TO_SOT_SMD:SOT-23-5") 
+        (field 
+          (name "Datasheet") "https://www.diodes.com/assets/Datasheets/AP2112.pdf") 
+        (field 
+          (name "Description") "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "VIN") 
+          (type "power_in")) 
+        (pin 
+          (num "2") 
+          (name "GND") 
+          (type "power_in")) 
+        (pin 
+          (num "3") 
+          (name "EN") 
+          (type "input")) 
+        (pin 
+          (num "4") 
+          (name "NC") 
+          (type "no_connect")) 
+        (pin 
+          (num "5") 
+          (name "VOUT") 
+          (type "power_out")))) 
+    (libpart 
+      (lib "Sensor") 
+      (part "MAX30102") 
+      (description "Heart Rate Sensor, 14-OLGA") 
+      (docs "https://datasheets.maximintegrated.com/en/ds/MAX30102.pdf") 
+      (footprints 
+        (fp "Maxim*OLGA*3.3x5.6mm*P0.8mm*")) 
+      (fields 
+        (field 
+          (name "Reference") "U") 
+        (field 
+          (name "Value") "MAX30102") 
+        (field 
+          (name "Footprint") "OptoDevice:Maxim_OLGA-14_3.3x5.6mm_P0.8mm") 
+        (field 
+          (name "Datasheet") "https://datasheets.maximintegrated.com/en/ds/MAX30102.pdf") 
+        (field 
+          (name "Description") "Heart Rate Sensor, 14-OLGA")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "NC") 
+          (type "no_connect")) 
+        (pin 
+          (num "2") 
+          (name "SCL") 
+          (type "input")) 
+        (pin 
+          (num "3") 
+          (name "SDA") 
+          (type "bidirectional")) 
+        (pin 
+          (num "4") 
+          (name "PGND") 
+          (type "power_in")) 
+        (pin 
+          (num "5") 
+          (name "NC") 
+          (type "no_connect")) 
+        (pin 
+          (num "6") 
+          (name "NC") 
+          (type "no_connect")) 
+        (pin 
+          (num "7") 
+          (name "NC") 
+          (type "no_connect")) 
+        (pin 
+          (num "8") 
+          (name "NC") 
+          (type "no_connect")) 
+        (pin 
+          (num "9") 
+          (name "VLED+") 
+          (type "power_in")) 
+        (pin 
+          (num "10") 
+          (name "VLED+") 
+          (type "passive")) 
+        (pin 
+          (num "11") 
+          (name "VDD") 
+          (type "power_in")) 
+        (pin 
+          (num "12") 
+          (name "GND") 
+          (type "power_in")) 
+        (pin 
+          (num "13") 
+          (name "~{INT}") 
+          (type "output")) 
+        (pin 
+          (num "14") 
+          (name "NC") 
+          (type "no_connect")))) 
+    (libpart 
+      (lib "Sensor_Motion") 
+      (part "MPU-6050") 
+      (description "InvenSense 6-Axis Motion Sensor, Gyroscope, Accelerometer, I2C") 
+      (docs "https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf") 
+      (footprints 
+        (fp "*QFN*4x4mm*P0.5mm*")) 
+      (fields 
+        (field 
+          (name "Reference") "U") 
+        (field 
+          (name "Value") "MPU-6050") 
+        (field 
+          (name "Footprint") "Sensor_Motion:InvenSense_QFN-24_4x4mm_P0.5mm") 
+        (field 
+          (name "Datasheet") "https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf") 
+        (field 
+          (name "Description") "InvenSense 6-Axis Motion Sensor, Gyroscope, Accelerometer, I2C")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "CLKIN") 
+          (type "input")) 
+        (pin 
+          (num "2") 
+          (name "NC") 
+          (type "no_connect")) 
+        (pin 
+          (num "3") 
+          (name "NC") 
+          (type "no_connect")) 
+        (pin 
+          (num "4") 
+          (name "NC") 
+          (type "no_connect")) 
+        (pin 
+          (num "5") 
+          (name "NC") 
+          (type "no_connect")) 
+        (pin 
+          (num "6") 
+          (name "AUX_DA") 
+          (type "bidirectional")) 
+        (pin 
+          (num "7") 
+          (name "AUX_CL") 
+          (type "output")) 
+        (pin 
+          (num "8") 
+          (name "VLOGIC") 
+          (type "power_in")) 
+        (pin 
+          (num "9") 
+          (name "AD0") 
+          (type "input")) 
+        (pin 
+          (num "10") 
+          (name "REGOUT") 
+          (type "passive")) 
+        (pin 
+          (num "11") 
+          (name "FSYNC") 
+          (type "input")) 
+        (pin 
+          (num "12") 
+          (name "INT") 
+          (type "output")) 
+        (pin 
+          (num "13") 
+          (name "VDD") 
+          (type "power_in")) 
+        (pin 
+          (num "14") 
+          (name "NC") 
+          (type "no_connect")) 
+        (pin 
+          (num "15") 
+          (name "NC") 
+          (type "no_connect")) 
+        (pin 
+          (num "16") 
+          (name "NC") 
+          (type "no_connect")) 
+        (pin 
+          (num "17") 
+          (name "NC") 
+          (type "no_connect")) 
+        (pin 
+          (num "18") 
+          (name "GND") 
+          (type "power_in")) 
+        (pin 
+          (num "19") 
+          (name "RESV") 
+          (type "no_connect")) 
+        (pin 
+          (num "20") 
+          (name "CPOUT") 
+          (type "passive")) 
+        (pin 
+          (num "21") 
+          (name "RESV") 
+          (type "no_connect")) 
+        (pin 
+          (num "22") 
+          (name "RESV") 
+          (type "no_connect")) 
+        (pin 
+          (num "23") 
+          (name "SCL") 
+          (type "input")) 
+        (pin 
+          (num "24") 
+          (name "SDA") 
+          (type "bidirectional")))) 
+    (libpart 
+      (lib "Sensor_Temperature") 
+      (part "TMP117xxDRV") 
+      (description "Digital Temperature Sensor with I2C/SMBus Interface, 16 bits, ±0.3°C, one-shot conversion, alert, nist traceable, EEPROM, WSON") 
+      (docs "https://www.ti.com/lit/ds/symlink/tmp117.pdf") 
+      (footprints 
+        (fp "WSON*1EP?2x2mm?P0.65mm?EP1x1.6mm*")) 
+      (fields 
+        (field 
+          (name "Reference") "U") 
+        (field 
+          (name "Value") "TMP117xxDRV") 
+        (field 
+          (name "Footprint") "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm") 
+        (field 
+          (name "Datasheet") "https://www.ti.com/lit/ds/symlink/tmp117.pdf") 
+        (field 
+          (name "Description") "Digital Temperature Sensor with I2C/SMBus Interface, 16 bits, ±0.3°C, one-shot conversion, alert, nist traceable, EEPROM, WSON")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "SCL") 
+          (type "input")) 
+        (pin 
+          (num "2") 
+          (name "GND") 
+          (type "power_in")) 
+        (pin 
+          (num "3") 
+          (name "ALERT") 
+          (type "open_collector")) 
+        (pin 
+          (num "4") 
+          (name "ADD0") 
+          (type "input")) 
+        (pin 
+          (num "5") 
+          (name "V+") 
+          (type "power_in")) 
+        (pin 
+          (num "6") 
+          (name "SDA") 
+          (type "bidirectional"))))) 
+  (libraries 
+    (library 
+      (logical "Battery_Management") 
+      (uri "C:\\Program Files\\KiCad\\9.0\\share\\kicad\\symbols\\/Battery_Management.kicad_sym")) 
+    (library 
+      (logical "Connector") 
+      (uri "C:\\Program Files\\KiCad\\9.0\\share\\kicad\\symbols\\/Connector.kicad_sym")) 
+    (library 
+      (logical "Memory_Flash") 
+      (uri "C:\\Program Files\\KiCad\\9.0\\share\\kicad\\symbols\\/Memory_Flash.kicad_sym")) 
+    (library 
+      (logical "RF_Module") 
+      (uri "C:\\Program Files\\KiCad\\9.0\\share\\kicad\\symbols\\/RF_Module.kicad_sym")) 
+    (library 
+      (logical "Regulator_Linear") 
+      (uri "C:\\Program Files\\KiCad\\9.0\\share\\kicad\\symbols\\/Regulator_Linear.kicad_sym")) 
+    (library 
+      (logical "Sensor") 
+      (uri "C:\\Program Files\\KiCad\\9.0\\share\\kicad\\symbols\\/Sensor.kicad_sym")) 
+    (library 
+      (logical "Sensor_Motion") 
+      (uri "C:\\Program Files\\KiCad\\9.0\\share\\kicad\\symbols\\/Sensor_Motion.kicad_sym")) 
+    (library 
+      (logical "Sensor_Temperature") 
+      (uri "C:\\Program Files\\KiCad\\9.0\\share\\kicad\\symbols\\/Sensor_Temperature.kicad_sym"))) 
+  (nets 
+    (net 
+      (code "1") 
+      (name "+3.3V") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "11") 
+        (pinfunction "VDD") 
+        (pintype "power_in")) 
+      (node 
+        (ref "U2") 
+        (pin "13") 
+        (pinfunction "VDD") 
+        (pintype "power_in")) 
+      (node 
+        (ref "U3") 
+        (pin "5") 
+        (pinfunction "V+") 
+        (pintype "power_in")) 
+      (node 
+        (ref "U4") 
+        (pin "8") 
+        (pinfunction "VCC") 
+        (pintype "power_in")) 
+      (node 
+        (ref "U6") 
+        (pin "5") 
+        (pinfunction "VOUT") 
+        (pintype "power_out")) 
+      (node 
+        (ref "U8") 
+        (pin "2") 
+        (pinfunction "3V3") 
+        (pintype "power_in"))) 
+    (net 
+      (code "2") 
+      (name "GND") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "12") 
+        (pinfunction "GND") 
+        (pintype "power_in")) 
+      (node 
+        (ref "U2") 
+        (pin "18") 
+        (pinfunction "GND") 
+        (pintype "power_in")) 
+      (node 
+        (ref "U3") 
+        (pin "2") 
+        (pinfunction "GND") 
+        (pintype "power_in")) 
+      (node 
+        (ref "U4") 
+        (pin "4") 
+        (pinfunction "GND") 
+        (pintype "power_in")) 
+      (node 
+        (ref "U6") 
+        (pin "2") 
+        (pinfunction "GND") 
+        (pintype "power_in")) 
+      (node 
+        (ref "U8") 
+        (pin "1") 
+        (pinfunction "GND") 
+        (pintype "power_in")) 
+      (node 
+        (ref "U8") 
+        (pin "26") 
+        (pinfunction "GND") 
+        (pintype "passive")) 
+      (node 
+        (ref "U8") 
+        (pin "42") 
+        (pinfunction "GND") 
+        (pintype "passive")) 
+      (node 
+        (ref "U8") 
+        (pin "43") 
+        (pinfunction "GND") 
+        (pintype "passive"))) 
+    (net 
+      (code "3") 
+      (name "Net-(U1-SCL)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "2") 
+        (pinfunction "SCL") 
+        (pintype "input")) 
+      (node 
+        (ref "U4") 
+        (pin "7") 
+        (pinfunction "~{HOLD}/~{RESET}/IO_{3}") 
+        (pintype "bidirectional")) 
+      (node 
+        (ref "U8") 
+        (pin "17") 
+        (pinfunction "IO14") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "4") 
+      (name "Net-(U1-SDA)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "3") 
+        (pinfunction "SDA") 
+        (pintype "bidirectional")) 
+      (node 
+        (ref "U8") 
+        (pin "8") 
+        (pinfunction "IO05") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "5") 
+      (name "Net-(U2-SCL)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "23") 
+        (pinfunction "SCL") 
+        (pintype "input")) 
+      (node 
+        (ref "U3") 
+        (pin "1") 
+        (pinfunction "SCL") 
+        (pintype "input")) 
+      (node 
+        (ref "U8") 
+        (pin "24") 
+        (pinfunction "IO21") 
+        (pintype "bidirectional")) 
+      (node 
+        (ref "U8") 
+        (pin "25") 
+        (pinfunction "IO26") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "6") 
+      (name "Net-(U2-SDA)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "24") 
+        (pinfunction "SDA") 
+        (pintype "bidirectional")) 
+      (node 
+        (ref "U3") 
+        (pin "6") 
+        (pinfunction "SDA") 
+        (pintype "bidirectional")) 
+      (node 
+        (ref "U8") 
+        (pin "28") 
+        (pinfunction "IO34") 
+        (pintype "bidirectional")) 
+      (node 
+        (ref "U8") 
+        (pin "34") 
+        (pinfunction "IO40") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "7") 
+      (name "Net-(U4-CLK)") 
+      (class "Default") 
+      (node 
+        (ref "U4") 
+        (pin "6") 
+        (pinfunction "CLK") 
+        (pintype "input")) 
+      (node 
+        (ref "U8") 
+        (pin "13") 
+        (pinfunction "IO10") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "8") 
+      (name "Net-(U4-DI{slash}IO_{0})") 
+      (class "Default") 
+      (node 
+        (ref "U4") 
+        (pin "5") 
+        (pinfunction "DI/IO_{0}") 
+        (pintype "bidirectional")) 
+      (node 
+        (ref "U8") 
+        (pin "14") 
+        (pinfunction "IO11") 
+        (pintype "bidirectional")) 
+      (node 
+        (ref "U8") 
+        (pin "23") 
+        (pinfunction "USB_D+") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "9") 
+      (name "Net-(U4-DO{slash}IO_{1})") 
+      (class "Default") 
+      (node 
+        (ref "U4") 
+        (pin "2") 
+        (pinfunction "DO/IO_{1}") 
+        (pintype "bidirectional")) 
+      (node 
+        (ref "U8") 
+        (pin "15") 
+        (pinfunction "IO12") 
+        (pintype "bidirectional")) 
+      (node 
+        (ref "U8") 
+        (pin "29") 
+        (pinfunction "IO35") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "10") 
+      (name "Net-(U6-VIN)") 
+      (class "Default") 
+      (node 
+        (ref "U6") 
+        (pin "1") 
+        (pinfunction "VIN") 
+        (pintype "power_in")) 
+      (node 
+        (ref "U7") 
+        (pin "2") 
+        (pinfunction "VIN") 
+        (pintype "power_in")) 
+      (node 
+        (ref "U9") 
+        (pin "3") 
+        (pinfunction "BAT") 
+        (pintype "power_out"))) 
+    (net 
+      (code "11") 
+      (name "Net-(U7-GND)") 
+      (class "Default") 
+      (node 
+        (ref "U7") 
+        (pin "9") 
+        (pinfunction "GND") 
+        (pintype "power_in")) 
+      (node 
+        (ref "U9") 
+        (pin "2") 
+        (pinfunction "GND") 
+        (pintype "power_in"))) 
+    (net 
+      (code "12") 
+      (name "Net-(U9-V_{CC})") 
+      (class "Default") 
+      (node 
+        (ref "J1") 
+        (pin "A9") 
+        (pinfunction "VBUS") 
+        (pintype "passive")) 
+      (node 
+        (ref "J1") 
+        (pin "B9") 
+        (pinfunction "VBUS") 
+        (pintype "passive")) 
+      (node 
+        (ref "U9") 
+        (pin "4") 
+        (pinfunction "V_{CC}") 
+        (pintype "power_in"))) 
+    (net 
+      (code "13") 
+      (name "unconnected-(J1-CC1-PadA5)") 
+      (class "Default") 
+      (node 
+        (ref "J1") 
+        (pin "A5") 
+        (pinfunction "CC1") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "14") 
+      (name "unconnected-(J1-CC2-PadB5)") 
+      (class "Default") 
+      (node 
+        (ref "J1") 
+        (pin "B5") 
+        (pinfunction "CC2") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "15") 
+      (name "unconnected-(J1-GND-PadA12)") 
+      (class "Default") 
+      (node 
+        (ref "J1") 
+        (pin "A12") 
+        (pinfunction "GND") 
+        (pintype "passive+no_connect")) 
+      (node 
+        (ref "J1") 
+        (pin "B12") 
+        (pinfunction "GND") 
+        (pintype "passive+no_connect"))) 
+    (net 
+      (code "16") 
+      (name "unconnected-(J1-SHIELD-PadS1)") 
+      (class "Default") 
+      (node 
+        (ref "J1") 
+        (pin "S1") 
+        (pinfunction "SHIELD") 
+        (pintype "passive+no_connect"))) 
+    (net 
+      (code "17") 
+      (name "unconnected-(U1-NC-Pad1)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "1") 
+        (pinfunction "NC") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "18") 
+      (name "unconnected-(U1-NC-Pad5)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "5") 
+        (pinfunction "NC") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "19") 
+      (name "unconnected-(U1-NC-Pad6)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "6") 
+        (pinfunction "NC") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "20") 
+      (name "unconnected-(U1-NC-Pad7)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "7") 
+        (pinfunction "NC") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "21") 
+      (name "unconnected-(U1-NC-Pad8)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "8") 
+        (pinfunction "NC") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "22") 
+      (name "unconnected-(U1-NC-Pad14)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "14") 
+        (pinfunction "NC") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "23") 
+      (name "unconnected-(U1-PGND-Pad4)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "4") 
+        (pinfunction "PGND") 
+        (pintype "power_in+no_connect"))) 
+    (net 
+      (code "24") 
+      (name "unconnected-(U1-VLED+-Pad10)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "10") 
+        (pinfunction "VLED+") 
+        (pintype "passive+no_connect")) 
+      (node 
+        (ref "U1") 
+        (pin "9") 
+        (pinfunction "VLED+") 
+        (pintype "power_in+no_connect"))) 
+    (net 
+      (code "25") 
+      (name "unconnected-(U1-~{INT}-Pad13)") 
+      (class "Default") 
+      (node 
+        (ref "U1") 
+        (pin "13") 
+        (pinfunction "~{INT}") 
+        (pintype "output+no_connect"))) 
+    (net 
+      (code "26") 
+      (name "unconnected-(U2-AD0-Pad9)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "9") 
+        (pinfunction "AD0") 
+        (pintype "input+no_connect"))) 
+    (net 
+      (code "27") 
+      (name "unconnected-(U2-AUX_CL-Pad7)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "7") 
+        (pinfunction "AUX_CL") 
+        (pintype "output+no_connect"))) 
+    (net 
+      (code "28") 
+      (name "unconnected-(U2-AUX_DA-Pad6)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "6") 
+        (pinfunction "AUX_DA") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "29") 
+      (name "unconnected-(U2-CLKIN-Pad1)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "1") 
+        (pinfunction "CLKIN") 
+        (pintype "input+no_connect"))) 
+    (net 
+      (code "30") 
+      (name "unconnected-(U2-CPOUT-Pad20)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "20") 
+        (pinfunction "CPOUT") 
+        (pintype "passive+no_connect"))) 
+    (net 
+      (code "31") 
+      (name "unconnected-(U2-FSYNC-Pad11)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "11") 
+        (pinfunction "FSYNC") 
+        (pintype "input+no_connect"))) 
+    (net 
+      (code "32") 
+      (name "unconnected-(U2-INT-Pad12)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "12") 
+        (pinfunction "INT") 
+        (pintype "output+no_connect"))) 
+    (net 
+      (code "33") 
+      (name "unconnected-(U2-NC-Pad2)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "2") 
+        (pinfunction "NC") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "34") 
+      (name "unconnected-(U2-NC-Pad3)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "3") 
+        (pinfunction "NC") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "35") 
+      (name "unconnected-(U2-NC-Pad4)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "4") 
+        (pinfunction "NC") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "36") 
+      (name "unconnected-(U2-NC-Pad5)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "5") 
+        (pinfunction "NC") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "37") 
+      (name "unconnected-(U2-NC-Pad14)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "14") 
+        (pinfunction "NC") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "38") 
+      (name "unconnected-(U2-NC-Pad15)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "15") 
+        (pinfunction "NC") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "39") 
+      (name "unconnected-(U2-NC-Pad16)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "16") 
+        (pinfunction "NC") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "40") 
+      (name "unconnected-(U2-NC-Pad17)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "17") 
+        (pinfunction "NC") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "41") 
+      (name "unconnected-(U2-REGOUT-Pad10)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "10") 
+        (pinfunction "REGOUT") 
+        (pintype "passive+no_connect"))) 
+    (net 
+      (code "42") 
+      (name "unconnected-(U2-RESV-Pad19)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "19") 
+        (pinfunction "RESV") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "43") 
+      (name "unconnected-(U2-RESV-Pad21)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "21") 
+        (pinfunction "RESV") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "44") 
+      (name "unconnected-(U2-RESV-Pad22)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "22") 
+        (pinfunction "RESV") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "45") 
+      (name "unconnected-(U2-VLOGIC-Pad8)") 
+      (class "Default") 
+      (node 
+        (ref "U2") 
+        (pin "8") 
+        (pinfunction "VLOGIC") 
+        (pintype "power_in+no_connect"))) 
+    (net 
+      (code "46") 
+      (name "unconnected-(U3-ADD0-Pad4)") 
+      (class "Default") 
+      (node 
+        (ref "U3") 
+        (pin "4") 
+        (pinfunction "ADD0") 
+        (pintype "input+no_connect"))) 
+    (net 
+      (code "47") 
+      (name "unconnected-(U3-ALERT-Pad3)") 
+      (class "Default") 
+      (node 
+        (ref "U3") 
+        (pin "3") 
+        (pinfunction "ALERT") 
+        (pintype "open_collector+no_connect"))) 
+    (net 
+      (code "48") 
+      (name "unconnected-(U4-~{CS}-Pad1)") 
+      (class "Default") 
+      (node 
+        (ref "U4") 
+        (pin "1") 
+        (pinfunction "~{CS}") 
+        (pintype "input+no_connect"))) 
+    (net 
+      (code "49") 
+      (name "unconnected-(U4-~{WP}{slash}IO_{2}-Pad3)") 
+      (class "Default") 
+      (node 
+        (ref "U4") 
+        (pin "3") 
+        (pinfunction "~{WP}/IO_{2}") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "50") 
+      (name "unconnected-(U6-EN-Pad3)") 
+      (class "Default") 
+      (node 
+        (ref "U6") 
+        (pin "3") 
+        (pinfunction "EN") 
+        (pintype "input+no_connect"))) 
+    (net 
+      (code "51") 
+      (name "unconnected-(U6-NC-Pad4)") 
+      (class "Default") 
+      (node 
+        (ref "U6") 
+        (pin "4") 
+        (pinfunction "NC") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "52") 
+      (name "unconnected-(U7-ISET-Pad1)") 
+      (class "Default") 
+      (node 
+        (ref "U7") 
+        (pin "1") 
+        (pinfunction "ISET") 
+        (pintype "passive+no_connect"))) 
+    (net 
+      (code "53") 
+      (name "unconnected-(U7-LX-Pad4)") 
+      (class "Default") 
+      (node 
+        (ref "U7") 
+        (pin "4") 
+        (pinfunction "LX") 
+        (pintype "input+no_connect"))) 
+    (net 
+      (code "54") 
+      (name "unconnected-(U7-NC-Pad6)") 
+      (class "Default") 
+      (node 
+        (ref "U7") 
+        (pin "6") 
+        (pinfunction "NC") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "55") 
+      (name "unconnected-(U7-NTC-Pad8)") 
+      (class "Default") 
+      (node 
+        (ref "U7") 
+        (pin "8") 
+        (pinfunction "NTC") 
+        (pintype "input+no_connect"))) 
+    (net 
+      (code "56") 
+      (name "unconnected-(U7-VH-Pad5)") 
+      (class "Default") 
+      (node 
+        (ref "U7") 
+        (pin "5") 
+        (pinfunction "VH") 
+        (pintype "power_out+no_connect"))) 
+    (net 
+      (code "57") 
+      (name "unconnected-(U7-VL-Pad3)") 
+      (class "Default") 
+      (node 
+        (ref "U7") 
+        (pin "3") 
+        (pinfunction "VL") 
+        (pintype "input+no_connect"))) 
+    (net 
+      (code "58") 
+      (name "unconnected-(U7-VSET{slash}LED-Pad7)") 
+      (class "Default") 
+      (node 
+        (ref "U7") 
+        (pin "7") 
+        (pinfunction "VSET/LED") 
+        (pintype "output+no_connect"))) 
+    (net 
+      (code "59") 
+      (name "unconnected-(U8-EN-Pad41)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "41") 
+        (pinfunction "EN") 
+        (pintype "input+no_connect"))) 
+    (net 
+      (code "60") 
+      (name "unconnected-(U8-IO00-Pad3)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "3") 
+        (pinfunction "IO00") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "61") 
+      (name "unconnected-(U8-IO01-Pad4)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "4") 
+        (pinfunction "IO01") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "62") 
+      (name "unconnected-(U8-IO02-Pad5)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "5") 
+        (pinfunction "IO02") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "63") 
+      (name "unconnected-(U8-IO03-Pad6)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "6") 
+        (pinfunction "IO03") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "64") 
+      (name "unconnected-(U8-IO04-Pad7)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "7") 
+        (pinfunction "IO04") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "65") 
+      (name "unconnected-(U8-IO06-Pad9)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "9") 
+        (pinfunction "IO06") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "66") 
+      (name "unconnected-(U8-IO07-Pad10)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "10") 
+        (pinfunction "IO07") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "67") 
+      (name "unconnected-(U8-IO08-Pad11)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "11") 
+        (pinfunction "IO08") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "68") 
+      (name "unconnected-(U8-IO09-Pad12)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "12") 
+        (pinfunction "IO09") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "69") 
+      (name "unconnected-(U8-IO13-Pad16)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "16") 
+        (pinfunction "IO13") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "70") 
+      (name "unconnected-(U8-IO15-Pad18)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "18") 
+        (pinfunction "IO15") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "71") 
+      (name "unconnected-(U8-IO16-Pad19)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "19") 
+        (pinfunction "IO16") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "72") 
+      (name "unconnected-(U8-IO17-Pad20)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "20") 
+        (pinfunction "IO17") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "73") 
+      (name "unconnected-(U8-IO18-Pad21)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "21") 
+        (pinfunction "IO18") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "74") 
+      (name "unconnected-(U8-IO33-Pad27)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "27") 
+        (pinfunction "IO33") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "75") 
+      (name "unconnected-(U8-IO36-Pad30)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "30") 
+        (pinfunction "IO36") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "76") 
+      (name "unconnected-(U8-IO37-Pad31)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "31") 
+        (pinfunction "IO37") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "77") 
+      (name "unconnected-(U8-IO38-Pad32)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "32") 
+        (pinfunction "IO38") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "78") 
+      (name "unconnected-(U8-IO39-Pad33)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "33") 
+        (pinfunction "IO39") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "79") 
+      (name "unconnected-(U8-IO41-Pad35)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "35") 
+        (pinfunction "IO41") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "80") 
+      (name "unconnected-(U8-IO42-Pad36)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "36") 
+        (pinfunction "IO42") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "81") 
+      (name "unconnected-(U8-IO45-Pad39)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "39") 
+        (pinfunction "IO45") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "82") 
+      (name "unconnected-(U8-IO46-Pad40)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "40") 
+        (pinfunction "IO46") 
+        (pintype "input+no_connect"))) 
+    (net 
+      (code "83") 
+      (name "unconnected-(U8-RXD0-Pad38)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "38") 
+        (pinfunction "RXD0") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "84") 
+      (name "unconnected-(U8-TXD0-Pad37)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "37") 
+        (pinfunction "TXD0") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "85") 
+      (name "unconnected-(U8-USB_D--Pad22)") 
+      (class "Default") 
+      (node 
+        (ref "U8") 
+        (pin "22") 
+        (pinfunction "USB_D-") 
+        (pintype "bidirectional+no_connect"))) 
+    (net 
+      (code "86") 
+      (name "unconnected-(U9-PROG-Pad6)") 
+      (class "Default") 
+      (node 
+        (ref "U9") 
+        (pin "6") 
+        (pinfunction "PROG") 
+        (pintype "passive+no_connect"))) 
+    (net 
+      (code "87") 
+      (name "unconnected-(U9-STDBY-Pad5)") 
+      (class "Default") 
+      (node 
+        (ref "U9") 
+        (pin "5") 
+        (pinfunction "STDBY") 
+        (pintype "open_collector+no_connect"))) 
+    (net 
+      (code "88") 
+      (name "unconnected-(U9-~{CHRG}-Pad1)") 
+      (class "Default") 
+      (node 
+        (ref "U9") 
+        (pin "1") 
+        (pinfunction "~{CHRG}") 
+        (pintype "open_collector+no_connect")))))
